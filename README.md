@@ -1,1 +1,1 @@
-# Strip
+# Jocus

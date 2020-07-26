@@ -5,18 +5,18 @@ requires = [
 build-backend = "poetry.masonry.api"
 
 [tool.poetry]
-name = "strip"
+name = "jocus"
 version = "0.0.1"
 description = ""
 authors = [
   "Nick Gashkov <nick@gashkov.com>"
 ]
 readme = "README.md"
-repository = "https://github.com/nickgashkov/strip/"
-homepage = "https://github.com/nickgashkov/strip/"
+repository = "https://github.com/nickgashkov/jocus/"
+homepage = "https://github.com/nickgashkov/jocus/"
 
 [tool.poetry.scripts]
-strip = "strip.__main__:main"
+jocus = "jocus.__main__:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -28,4 +28,4 @@ isort = "^5.1.4"
 
 [tool.isort]
 profile = "black"
-src_paths = ["strip"]
+src_paths = ["jocus"]
