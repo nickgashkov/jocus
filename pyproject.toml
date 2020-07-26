@@ -1,0 +1,31 @@
+[build-system]
+requires = [
+  "poetry>=1.0.5"
+]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "strip"
+version = "0.0.1"
+description = ""
+authors = [
+  "Nick Gashkov <nick@gashkov.com>"
+]
+readme = "README.md"
+repository = "https://github.com/nickgashkov/strip/"
+homepage = "https://github.com/nickgashkov/strip/"
+
+[tool.poetry.scripts]
+strip = "strip.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+mypy = "^0.782"
+isort = "^5.1.4"
+
+[tool.isort]
+profile = "black"
+src_paths = ["strip"]
