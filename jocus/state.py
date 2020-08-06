@@ -75,6 +75,7 @@ class State:
 
         if not self.coins and not self.is_finished:
             self.is_finished = True
+            voice.say("оа")
             voice.say("молодец")
 
     def render(self, window: curses.window) -> None:
